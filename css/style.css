@@ -139,5 +139,20 @@ p{
     height: 30px;
     font-size: medium;
     color: #424242;
+    display: block;
 }
+.botoes {
+    width: 140px;
+    height: 50px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #424242;
+    font-weight: bold;
+}
+.radioOptions {
+    margin-top: 2%;
+    font-size: medium;
+    color: #424242;
+}
+
 

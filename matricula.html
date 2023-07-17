@@ -23,8 +23,24 @@
             <fieldset class="fieldset-infopessoal">
                 <p class="texto-infopessoal">Informações Pessoais</p>
                 <hr id="hr-infopessoal">
-                <label for="nome">NOME</label>
-                <input type="text" id="nome"/>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" class="estiloInputs" size="80"/>
+
+                <label for="CPF">CPF</label>
+                <input type="text" name="CPF" id="CPF" maxlength="11" size="80" class="estiloInputs">
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" class="estiloInputs" size="80">
+
+                <label for="datanascimento">Data de nascimento</label>
+                <input type=date name="datanascimento" id="datanascimento" class="estiloInputs">
+                
+                <label>Escolaridade<br>
+                    <input type="radio" name="escolaridade" class="radioOptions"> Nível Fundamental <br>
+                    <input type="radio" name="escolaridade" class="radioOptions"> Nível Médio <br>
+                    <input type="radio" name="escolaridade" class="radioOptions"> Nível Superior <br>
+                </label>
+
             </fieldset>
         </form>
 

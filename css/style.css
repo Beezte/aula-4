@@ -123,3 +123,10 @@ p{
     text-decoration: none;
     font-weight: normal;
 }
+.divinterna{
+    padding: 20px;
+    width: 1024px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #424242;
+
+}

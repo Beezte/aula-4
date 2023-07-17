@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+}
+.menu-hr{
+    border: 6px solid #33A95B;
+}
+a{
+    font-size: medium;
+    text-decoration: none;
+    color: #33A95B;
+}
+.cabecalho{
+    background-color: #33A95B;
+    padding: 15px;
+}
+.menu-principal{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tela-inicial{
+    text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+}
+.imag-ifpe{
+    width: 30%;
+}
+.msg-boasvindas{
+    text-align: center;
+    text-transform: uppercase;
+    color: #747271;
+}
+.rodape{
+    text-align: center;
+    font-family: "Verdana", sans-serif;
+    color: gray;
+    margin-top: 10%;
+}
+.linha-rodape{
+    border: 1px solid #33A95B;
+}
+.icons-redes{
+    width: 3%;
+    margin-right: 6px;
+}
+.historia-classegeral{
+    padding: 10px;
+}
+.historia-paragrafo{
+    padding: 20px;
+    width: 1024px;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+}
+.hr-vermelho{
+    border: 1px solid red;
+    width: 1024px;
+}
+.div-corpo-e-pagina {
+    margin-top: 40px;
+}
+.central {
+    width: 1024px;
+    font-family: 'SegoeUI-Light', serif !important;
+    text-align: left;
+}
+.div.imgs {
+    width: 100%;
+    text-align: center;
+    border-spacing: 20px;
+    color: #424242;
+    font-weight: bold;
+}
+.tamanhoFotosPaginaImagens {
+    width: 350px;
+    height: 300px;
+}
+p{
+    font-weight: bold;
+}
+#div-direita{
+    float: left;
+    margin-left: 50px;
+}
+#div-esquerda {
+    float: right;
+}

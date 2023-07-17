@@ -133,6 +133,7 @@ p{
     padding: 20px;
     border-radius: 10px;
     margin-top: 2%;
+    border-color:red;
 }
 .estiloInputs {
     margin-top: 1%;
@@ -157,5 +158,26 @@ p{
 .titulo-perguntaspessoais{
     font-weight: normal;
 }
+.fieldset-infoacademica{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2%;
+    border-color:cornflowerblue;
+}
+.cor-infopessoal{
+    color: red;
+    text-align: center;
 
+}
+.cor-infoacademica{
+    color: cornflowerblue;
+    text-align: center;
 
+}
+#hr-infoacademica{
+    border: 1px solid cornflowerblue;
+}
+
+#hr-infopessoal{
+    border: 1px solid red;
+}

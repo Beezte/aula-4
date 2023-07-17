@@ -128,5 +128,16 @@ p{
     width: 1024px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #424242;
-
 }
+.fieldset-infopessoal{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2%;
+}
+.estiloInputs {
+    margin-top: 1%;
+    height: 30px;
+    font-size: medium;
+    color: #424242;
+}
+

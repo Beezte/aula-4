@@ -128,6 +128,7 @@ p{
     width: 1024px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #424242;
+    margin: auto;
 }
 .fieldset-infopessoal{
     padding: 20px;
@@ -142,14 +143,14 @@ p{
     color: #424242;
     display: block;
 }
-.botoes {
-    width: 140px;
-    height: 50px;
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #424242;
-    font-weight: bold;
-}
+/*.botoes {*/
+/*    width: 140px;*/
+/*    height: 50px;*/
+/*    font-size: large;*/
+/*    font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+/*    color: #424242;*/
+/*    font-weight: bold;*/
+/*}*/
 .radioOptions {
     margin-top: 2%;
     font-size: medium;
@@ -164,15 +165,23 @@ p{
     margin-top: 2%;
     border-color:cornflowerblue;
 }
+.fieldset-infocurso{
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 2%;
+    border-color: #33A95B;
+}
 .cor-infopessoal{
     color: red;
     text-align: center;
-
 }
 .cor-infoacademica{
     color: cornflowerblue;
     text-align: center;
-
+}
+.cor-infocurso{
+    color: #33A95B;
+    text-align: center;
 }
 #hr-infoacademica{
     border: 1px solid cornflowerblue;
@@ -180,4 +189,32 @@ p{
 
 #hr-infopessoal{
     border: 1px solid red;
+}
+#hr-infocurso{
+    border: 1px solid #33A95B;
+}
+.botaoenviar {
+    float: right;
+    width: 140px;
+    height: 50px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #424242;
+    font-weight: bold;
+    background-color: cornflowerblue;
+}
+.botaoreset {
+    width: 140px;
+    height: 50px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #424242;
+    font-weight: bold;
+    background-color: indianred;
+}
+.select select {
+    width: 300px;
+}
+.label-titulo{
+    font-weight: bold;
 }

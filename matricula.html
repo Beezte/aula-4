@@ -20,34 +20,84 @@
     <div class="img-matriculese">
         <img src="arquivos/matricula.png" alt="" srcset="">
         <form action="" method="post">
+<!--            INFORMAÇÕES PESSOAIS-->
             <fieldset class="fieldset-infopessoal">
                 <p class="cor-infopessoal">Informações Pessoais</p>
                 <hr id="hr-infopessoal">
-                <label for="nome">Nome</label>
+                <br>
+                <label for="nome" class="label-titulo">Nome</label>
                 <input type="text" id="nome" class="estiloInputs" size="80"/>
-
-                <label for="CPF">CPF</label>
-                <input type="text" name="CPF" id="CPF" maxlength="11" size="80" class="estiloInputs">
-
-                <label for="email">E-mail</label>
+                <br>
+                <label for="CPF" class="label-titulo">CPF</label>
+                <input type="text" name="CPF" id="CPF" maxlength="11" size="11" class="estiloInputs" placeholder="000.000.000-00">
+                <br>
+                <label for="email" class="label-titulo">E-mail</label>
                 <input type="email" name="email" id="email" class="estiloInputs" size="80">
-
-                <label for="datanascimento">Data de nascimento</label>
+                <br>
+                <label for="datanascimento" class="label-titulo">Data de nascimento</label>
                 <input type=date name="datanascimento" id="datanascimento" class="estiloInputs">
-
-                <label>Escolaridade</label> <br>
+                <br>
+                <label class="label-titulo">Cidade</label>
+                <label>
+                <select name="cidade" class="estiloInputs">
+                    <option value="valor1">&#32;</option>
+                    <option value="valor2">Recife</option>
+                    <option value="valor3">Olinda</option>
+                    <option value="valor4">Jaboatão dos Guararapes</option>
+                </select>
+                </label>
+                <br>
+                <label class="label-titulo">Escolaridade</label> <br>
                 <label for="nivelfundamental"> <input type="radio" name="nivelfundamental" id="nivelfundamental" class="radioOptions"> Nível Fundamental</label><br>
                 <label for="nivelmedio"> <input type="radio" name="nivelmedio" id="nivelmedio" class="radioOptions"> Nivel Médio</label><br>
-                <label for="nivelsuperior"> <input type="radio" name="nivelsuperior" id="nivelsuperior" class="radioOptions"> Nivel Médio</label><br>
+                <label for="nivelsuperior"> <input type="radio" name="nivelsuperior" id="nivelsuperior" class="radioOptions"> Nivel Superior</label>
             </fieldset>
 
+<!--            INFORMAÇÕES ACADEMICA-->
             <fieldset class="fieldset-infoacademica">
                 <p class="cor-infoacademica">Informações para o Sistema Acadêmico</p>
                 <hr id="hr-infoacademica">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" class="estiloInputs" size="80"/>
-
+                <br>
+                <label for="loginmatricula" class="label-titulo">Login (para o sistema de matrícula)</label>
+                <input type="text" id="loginmatricula" class="estiloInputs" size="25"/>
+                <br>
+                <label for="senhamatricula" class="label-titulo">Senha (para o sistema de matrícula)</label>
+                <input type="password" id="senhamatricula" class="estiloInputs" size="10"/>
+                <br>
+                <label for="arquivocracha" class="label-titulo">Adicione sua foto para o crachá</label>
+                <input type="file" id="arquivocracha" class="estiloInputs" size="10"/>
             </fieldset>
+
+<!--            INFORMAÇÕES SOBRE O CURSO-->
+            <fieldset class="fieldset-infocurso">
+                <p class="cor-infocurso">Informações sobre o Curso</p>
+                <hr id="hr-infocurso">
+                <br>
+                <label class="label-titulo">Escolha o Curso</label>
+                <label>
+                    <div class="select">
+                    <select name="curso" class="estiloInputs">
+                        <option value="valor1">&#32;</option>
+                        <option value="valor2">Administração</option>
+                        <option value="valor3">Química</option>
+                        <option value="valor4">Rede de Computadores</option>
+                        <option value="valor5">Sistemas da Informação</option>
+                        <option value="valor6">Física</option>
+                        <option value="valor7">Publicidade</option>
+                    </select>
+                    </div>
+                </label>
+                <br>
+                <label for="motivo" class="label-titulo">Porque você deseja cursar esse curso?</label>
+                <textarea id="motivo" name="motivo"
+                          rows="80" cols="80" spellcheck="true" class="estiloInputs">
+                </textarea>
+            </fieldset>
+
+            <br><br><br>
+
+            <input type="submit" value="Enviar" class="botaoenviar">
+            <input type="reset" value="Limpar" class="botaoreset">
 
         </form>
 

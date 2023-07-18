@@ -17,6 +17,7 @@
 </header>
 
 <?php
+//phpinfo();
 $conexao = mysqli_connect("localhost", "root", "root", "bazante");
 if(!$conexao){
     echo"deu erro";

@@ -25,8 +25,8 @@ $conexao = mysqli_connect("localhost", "root", "", "bazante");
 //    echo "se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???";
 //}
 
-$cpfbuscar = $_GET['buscaraluno'];
-$sql = "SELECT * FROM bazante.cadastromatricula WHERE cpf LIKE '%$cpfbuscar%'";
+$cpfbuscar = $_GET['cpfaluno'];
+$sql = "SELECT * FROM bazante.cadastromatricula WHERE cpf = '$cpfbuscar'";
 
 $resultadopesquisa = $conexao->query($sql);
 

@@ -17,6 +17,7 @@
 </header>
 
 <?php
+error_reporting(0);
 //phpinfo();
 $conexao = mysqli_connect("localhost", "root", "", "bazante");
 //if(!$conexao){
@@ -24,25 +25,22 @@ $conexao = mysqli_connect("localhost", "root", "", "bazante");
 //}else{
 //    echo "se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???";
 //}
-
-$cpfbuscar = $_GET['cpfaluno'];
-$sql = "SELECT * FROM bazante.cadastromatricula WHERE cpf = '$cpfbuscar'";
+    $cpfbuscar = $_GET["cpfaluno"];
+    $sql = "select * from bazante.cadastromatricula where cpf = '$cpfbuscar'";
 
 $resultadopesquisa = $conexao->query($sql);
 
 //exibir resultado//
-if($resultadopesquisa->num_rows>0){
-    echo "<h2>Resultado da pesquisa</h2>";
-    while ($row=$resultadopesquisa->fetch_assoc()){
-        echo "<p>".$row["nomecompleto"]."</p>";
-        echo "<p>".$row["cpf"]."</p>";
-        echo "<p>".$row["email"]."</p>";
+    if ($resultadopesquisa->num_rows > 0) {
+        echo "<h2>Resultado da pesquisa</h2>";
+        while ($row = $resultadopesquisa->fetch_assoc()) {
+            echo "<p>" . $row["nomecompleto"] . "</p>";
+            echo "<p>" . $row["email"] . "</p>";
 
+        }
+    } else {
+        echo "Não achei nada";
     }
-} else{
-    echo "Não achei nada";
-}
-
 
 ?>
 

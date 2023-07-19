@@ -18,11 +18,11 @@
 
 <?php
 //phpinfo();
-$conexao = mysqli_connect("localhost", "root", "root", "bazante");
+$conexao = mysqli_connect("localhost", "root", "", "bazante");
 if(!$conexao){
     echo"deu erro";
 }
-echo"conectou"
+echo"se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???"
 ?>
 
 </body>

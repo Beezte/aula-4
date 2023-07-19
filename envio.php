@@ -41,11 +41,12 @@ if(mysqli_num_rows($retorno)>0){
     $escolaridade = $_POST['escolaridade'];
     $loginmatricula = $_POST['loginmatricula'];
     $senhamatricula = $_POST['senhamatricula'];
+    $senhacripto = password_hash($senhamatricula, PASSWORD_BCRYPT);
     $arquivocracha = $_POST['arquivocracha'];
     $curso = $_POST['curso'];
     $motivo = $_POST['motivo'];
 
-    $sql = "INSERT INTO bazante.cadastromatricula(nomecompleto,cpf,email,nascimento,cidade,escolaridade,login,senha,fotocracha,curso,motivo) values('$nome','$cpf','$email','$datanascimento','$cidade','$escolaridade','$loginmatricula','$senhamatricula','$arquivocracha','$curso','$motivo')";
+    $sql = "INSERT INTO bazante.cadastromatricula(nomecompleto,cpf,email,nascimento,cidade,escolaridade,login,senha,fotocracha,curso,motivo) values('$nome','$cpf','$email','$datanascimento','$cidade','$escolaridade','$loginmatricula','$senhacripto','$arquivocracha','$curso','$motivo')";
     $resultado = mysqli_query($conexao,$sql);
     echo "usuario cadastrado";
 }

@@ -8,11 +8,11 @@
       <jdbc-url>jdbc:mysql://localhost:3306/bazante</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="@localhost" uuid="a77a95f7-e928-4497-bfb0-5648ff447bb2">
+    <data-source source="LOCAL" name="@localhost" uuid="5e085be4-f3e2-4d3e-b78b-c6fe344e9329">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3307</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

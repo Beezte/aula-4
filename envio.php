@@ -22,7 +22,13 @@ $conexao = mysqli_connect("localhost", "root", "", "bazante");
 if(!$conexao){
     echo"deu erro";
 }
-echo"se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???"
+echo"se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???";
+//ve se ja existe
+$cpf = $_POST['CPF'];
+$cpf = mysqli_real_escape_string($conexao, $cpf);
+
+$sql = "SELECT cpf FROM bazante.cadastromatricula WHERE cpf='$cpf'";
+
 ?>
 
 </body>

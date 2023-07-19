@@ -28,6 +28,28 @@ $cpf = $_POST['CPF'];
 $cpf = mysqli_real_escape_string($conexao, $cpf);
 
 $sql = "SELECT cpf FROM bazante.cadastromatricula WHERE cpf='$cpf'";
+$retorno = mysqli_query($conexao,$sql);
+
+if(mysqli_num_rows($retorno)>0){
+    echo "meuni achei teu cpg aqui ja";
+}else{
+    $nome = $_POST['nome'];
+    $cpf = $_POST['CPF'];
+    $email = $_POST['email'];
+    $datanascimento = $_POST['datanascimento'];
+    $cidade = $_POST['cidade'];
+    $escolaridade = $_POST['escolaridade'];
+    $loginmatricula = $_POST['loginmatricula'];
+    $senhamatricula = $_POST['senhamatricula'];
+    $arquivocracha = $_POST['arquivocracha'];
+    $curso = $_POST['curso'];
+    $motivo = $_POST['motivo'];
+
+    $sql = "INSERT INTO bazante.cadastromatricula(nomecompleto,cpf,email,nascimento,cidade,escolaridade,login,senha,fotocracha,curso,motivo) values('$nome','$cpf','$email','$datanascimento','$cidade','$escolaridade','$loginmatricula','$senhamatricula','$arquivocracha','$motivo')";
+    $resultado = mysqli_query($conexao,$sql);
+    echo "usuario cadastrado";
+}
+
 
 ?>
 

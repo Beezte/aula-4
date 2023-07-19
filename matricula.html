@@ -29,7 +29,7 @@
                 <input type="text" id="nome" name="nome" class="estiloInputs" size="80"/>
                 <br>
                 <label for="CPF" class="label-titulo">CPF</label>
-                <input type="text" name="CPF" id="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="11" size="11" class="estiloInputs" placeholder="000.000.000-00">
+                <input type="text" name="CPF" id="CPF" maxlength="14" size="11" class="estiloInputs" placeholder="000.000.000-00">
                 <br>
                 <label for="email" class="label-titulo">E-mail</label>
                 <input type="email" name="email" id="email" class="estiloInputs" size="80">
@@ -40,17 +40,17 @@
                 <label class="label-titulo">Cidade</label>
                 <label>
                 <select name="cidade" class="estiloInputs">
-                    <option value="valor1">&#32;</option>
-                    <option value="valor2">Recife</option>
-                    <option value="valor3">Olinda</option>
-                    <option value="valor4">Jaboatão dos Guararapes</option>
+                    <option value="nulo">&#32;</option>
+                    <option value="Recife">Recife</option>
+                    <option value="Olinda">Olinda</option>
+                    <option value="Jaboatão do Guararapes">Jaboatão dos Guararapes</option>
                 </select>
                 </label>
                 <br>
                 <label class="label-titulo">Escolaridade</label> <br>
-                <label for="nivelfundamental"> <input type="radio" name="nivelfundamental" id="nivelfundamental" class="radioOptions"> Nível Fundamental</label><br>
-                <label for="nivelmedio"> <input type="radio" name="nivelmedio" id="nivelmedio" class="radioOptions"> Nivel Médio</label><br>
-                <label for="nivelsuperior"> <input type="radio" name="nivelsuperior" id="nivelsuperior" class="radioOptions"> Nivel Superior</label>
+                <label for="nivelfundamental"> <input type="radio" name="escolaridade" id="nivelfundamental" class="radioOptions"> Nível Fundamental</label><br>
+                <label for="nivelmedio"> <input type="radio" name="escolaridade" id="nivelmedio" class="radioOptions"> Nivel Médio</label><br>
+                <label for="nivelsuperior"> <input type="radio" name="escolaridade" id="nivelsuperior" class="radioOptions"> Nivel Superior</label>
             </fieldset>
 
 <!--            INFORMAÇÕES ACADEMICA-->
@@ -65,7 +65,7 @@
                 <input type="password" id="senhamatricula" name="senhamatricula" class="estiloInputs" size="10"/>
                 <br>
                 <label for="arquivocracha" class="label-titulo">Adicione sua foto para o crachá</label>
-                <input type="file" id="arquivocracha" class="estiloInputs" size="10"/>
+                <input type="file" id="arquivocracha" name="arquivocracha" class="estiloInputs" size="10"/>
             </fieldset>
 
 <!--            INFORMAÇÕES SOBRE O CURSO-->
@@ -77,13 +77,13 @@
                 <label>
                     <div class="select">
                     <select name="curso" class="estiloInputs">
-                        <option value="valor1">&#32;</option>
-                        <option value="valor2">Administração</option>
-                        <option value="valor3">Química</option>
-                        <option value="valor4">Rede de Computadores</option>
-                        <option value="valor5">Sistemas da Informação</option>
-                        <option value="valor6">Física</option>
-                        <option value="valor7">Publicidade</option>
+                        <option value="nulo">&#32;</option>
+                        <option value="Administração">Administração</option>
+                        <option value="Química">Química</option>
+                        <option value="Rede de Computadores">Rede de Computadores</option>
+                        <option value="Sistemas da Informação">Sistemas da Informação</option>
+                        <option value="Física">Física</option>
+                        <option value="Publicidade">Publicidade</option>
                     </select>
                     </div>
                 </label>

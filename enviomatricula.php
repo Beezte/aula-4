@@ -45,6 +45,7 @@ if(mysqli_num_rows($retorno)>0){
     $resultado = mysqli_query($conexao,$sql);
     echo "usuario cadastrado";
 }
+$conexao->close();
 ?>
 
 </body>

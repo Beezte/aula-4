@@ -211,6 +211,8 @@ p{
     font-weight: bold;
 }
 .div-errorpage{
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 1080px;
     background-color: #ffffff;
     box-shadow: 1px 1px 8px 8px #ececec;
@@ -252,20 +254,43 @@ p{
     padding-bottom: 90px;
 }
 .inputpesquisa{
-    margin-top: 1%;
+    margin-top: 3%;
     height: 30px;
     font-size: medium;
-    color: #424242;
+    box-shadow: 1px 1px 8px 4px #ececec;
+    border: 2px solid #ececec;
     display: block;
-    border-radius: 13px;
+    border-radius: 10px;
 }
 .pesquisar-botaoenviar{
-    margin-top: 3%;
-    height: 40px;
-    width: 100px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 8px 8px #ececec;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 8px 4px #ececec;
     font-family: 'Space Mono', monospace;
     font-size: medium;
-    font-weight: bold;
+    font-weight: normal;
+}
+.pesquisar-botaovoltar{
+    margin-right: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 1px 1px 8px 4px #ececec;
+    font-family: 'Space Mono', monospace;
+    font-size: medium;
+    font-weight: normal;
+}
+.texto-erroracredita{
+    font-family: 'Space Mono', monospace;
+    font-size: small;
+ }
+.link-errorpage{
+    margin-bottom: 75px;
+    color: #33A95B;
+    font-size: small;
+    text-decoration: none;
 }

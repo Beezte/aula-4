@@ -43,7 +43,8 @@ if ($resultadopesquisa->num_rows>0) {
         echo "<p>".$row["cidade"]."</p>";
         echo "<p>".$row["login"]."</p>";
         echo "<p>".$row["senha"]."</p>";
-        echo "<p>".$row["fotocracha"]."</p>";
+//        echo "<p>".$row["fotocracha"]."</p>";
+//        echo'<img height="300" width="300" src="data:image;base64,'.$row['fotocracha'].'">';
         echo "<br>";
     }
 } else {

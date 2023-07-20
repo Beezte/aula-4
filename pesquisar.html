@@ -13,28 +13,20 @@
     <div class="menu-principal">
         <a href="index.html">Página Inicial</a> &nbsp; | &nbsp; <a href="historia.html">História do Campus</a> &nbsp; | &nbsp; <a href="imagens.html">Imagens</a> &nbsp; | &nbsp; <a href="noticias.html">Notícias</a> &nbsp; | &nbsp; <a href="matricula.html">Matricule-se</a>
     </div>
-    <hr class="menu-hr">
+    <hr class="menu-hrpesquisar">
 </header>
 
-<div class="divinterna">
-    <div class="img-matriculese">
-        <form method="post" action="pesquisar.php">
-<!--            INFORMAÇÕES PESSOAIS-->
-            <fieldset class="fieldset-infopessoal">
-                <p class="cor-infopessoal">Pesquisar Alunos</p>
-                <hr id="hr-infopessoal">
-                <br>
-                <label for="cpfaluno" class="label-titulo">Insira o cpf para buscar</label>
-                <input type="text" id="cpfaluno" name="cpfaluno" class="estiloInputs" size="80"/>
-                <br>
-            </fieldset>
-            <br>
-            <input type="submit" value="Pesquisar" class="botaoenviar">
-            <input type="reset" value="Limpar" class="botaoreset">
-        </form>
-
+<center>
+    <form action="pesquisar.php" method="post">
+        <div class="pesquisar-container">
+            <h3>Pesquisa de Discentes matriculados</h3>
+            <h5>Por favor, insira o cpf do discente</h5>
+            <label for="cpfaluno"></label>
+            <input type="text" name="cpfaluno" id="cpfaluno" class="inputpesquisa" size="50" placeholder="000.000.000-00">
+            <input type="submit" value="Pesquisar" class="pesquisar-botaoenviar">
     </div>
-</div>
+    </form>
+</center>
 
 <div class="rodape">
     <footer>
@@ -51,4 +43,3 @@
 </div>
 
 </body>
-</html>

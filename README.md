@@ -1,7 +1,7 @@
 # aula-4
  
-> **Note**
+**Note**
 > This is a note
 
-> **Warning**
-> This is a warning
+ **Warning**
+This is a warning

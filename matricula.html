@@ -19,7 +19,7 @@
 <div class="divinterna">
     <div class="img-matriculese">
         <img src="arquivos/matricula.png" alt="" srcset="">
-        <form action="envio.php" method="POST">
+        <form action="enviomatricula.php" method="POST">
 <!--            INFORMAÇÕES PESSOAIS-->
             <fieldset class="fieldset-infopessoal">
                 <p class="cor-infopessoal">Informações Pessoais</p>
@@ -48,9 +48,19 @@
                 </label>
                 <br>
                 <label class="label-titulo">Escolaridade</label> <br>
-                <label for="nivelfundamental"> <input type="radio" name="escolaridade" id="nivelfundamental" class="radioOptions"> Nível Fundamental</label><br>
-                <label for="nivelmedio"> <input type="radio" name="escolaridade" id="nivelmedio" class="radioOptions"> Nivel Médio</label><br>
-                <label for="nivelsuperior"> <input type="radio" name="escolaridade" id="nivelsuperior" class="radioOptions"> Nivel Superior</label>
+                <label>
+                    <div class="select">
+                        <select name="escolaridade" class="estiloInputs">
+                            <option value="nulo">&#32;</option>
+                            <option value="Nível Fundamental">Nivel Fundamental</option>
+                            <option value="Nível Médio">Nível Médio</option>
+                            <option value="Nível Superior">Nível Superior</option>
+                        </select>
+                    </div>
+                </label>
+<!--                <label for="nivelfundamental"> <input type="radio" name="escolaridade" id="nivelfundamental" class="radioOptions"> Nível Fundamental</label><br>-->
+<!--                <label for="nivelmedio"> <input type="radio" name="escolaridade" id="nivelmedio" class="radioOptions"> Nivel Médio</label><br>-->
+<!--                <label for="nivelsuperior"> <input type="radio" name="escolaridade" id="nivelsuperior" class="radioOptions"> Nivel Superior</label>-->
             </fieldset>
 
 <!--            INFORMAÇÕES ACADEMICA-->

@@ -20,13 +20,14 @@
 //error_reporting(0);
 //phpinfo();
 //if(isset($_GET))
-$conexao = mysqli_connect("localhost", "root", "", "bazante");
+//$conexao = mysqli_connect("localhost", "root", "", "bazante");
 //if(!$conexao){
 //    echo"deu erro";
 //}else{
 //    echo "se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???";
 //}
-
+session_start();
+include("conexao.php");
 $cpfbase = $_POST['cpfaluno'];
 
 $sql = "select * from cadastromatricula where cpf='$cpfbase'";

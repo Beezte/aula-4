@@ -17,31 +17,37 @@
 </header>
 
 <?php
-error_reporting(0);
+//error_reporting(0);
 //phpinfo();
+//if(isset($_GET))
 $conexao = mysqli_connect("localhost", "root", "", "bazante");
 //if(!$conexao){
 //    echo"deu erro";
 //}else{
 //    echo "se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???";
 //}
-    $cpfbuscar = $_GET["cpfaluno"];
-    $sql = "select * from bazante.cadastromatricula where cpf = '$cpfbuscar'";
 
+$cpfbase = $_POST['cpfaluno'];
+
+$sql = "select * from cadastromatricula where cpf='$cpfbase'";
 $resultadopesquisa = $conexao->query($sql);
 
 //exibir resultado//
-    if ($resultadopesquisa->num_rows > 0) {
-        echo "<h2>Resultado da pesquisa</h2>";
-        while ($row = $resultadopesquisa->fetch_assoc()) {
-            echo "<p>" . $row["nomecompleto"] . "</p>";
-            echo "<p>" . $row["email"] . "</p>";
-
-        }
-    } else {
-        echo "Não achei nada";
+if ($resultadopesquisa->num_rows>0) {
+    echo "<h2>Resultado da pesquisa</h2>";
+    while ($row=$resultadopesquisa->fetch_assoc()) {
+        echo "<p>".$row["nomecompleto"]."</p>";
+        echo "<p>".$row["email"]."</p>";
+        echo "<p>".$row["nascimento"]."</p>";
+        echo "<p>".$row["cidade"]."</p>";
+        echo "<p>".$row["login"]."</p>";
+        echo "<p>".$row["senha"]."</p>";
+        echo "<p>".$row["fotocracha"]."</p>";
+        echo "<br>";
     }
-
+} else {
+        echo "Não achei nada";
+}
 ?>
 
 </body>

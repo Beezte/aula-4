@@ -143,14 +143,6 @@ p{
     color: #424242;
     display: block;
 }
-/*.botoes {*/
-/*    width: 140px;*/
-/*    height: 50px;*/
-/*    font-size: large;*/
-/*    font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-/*    color: #424242;*/
-/*    font-weight: bold;*/
-/*}*/
 .radioOptions {
     margin-top: 2%;
     font-size: medium;
@@ -217,4 +209,27 @@ p{
 }
 .label-titulo{
     font-weight: bold;
+}
+.div-errorpage{
+    width: 1080px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 8px 8px #ececec;
+    border-radius: 25px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+#titulo-errorpage{
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+.texto-errorpage{
+    font-family: 'Space Mono', monospace;
+    font-weight: lighter;
+}
+#img-erropage{
+    width: 25%;
+}
+.menu-hrerrorpage{
+    border: 6px solid #33A95B;
+    margin-bottom: 5%;
 }

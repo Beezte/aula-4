@@ -17,13 +17,8 @@
 </header>
 
 <?php
-//phpinfo();
-$conexao = mysqli_connect("localhost", "root", "", "bazante");
-if(!$conexao){
-    echo"deu erro";
-}
-echo"se isso apreceu foi pq conectou caralaho deu certo?!!!!!!???";
-//ve se ja existe
+session_start();
+include("conexao.php");
 $cpf = $_POST['CPF'];
 $cpf = mysqli_real_escape_string($conexao, $cpf);
 
@@ -50,8 +45,6 @@ if(mysqli_num_rows($retorno)>0){
     $resultado = mysqli_query($conexao,$sql);
     echo "usuario cadastrado";
 }
-
-
 ?>
 
 </body>
